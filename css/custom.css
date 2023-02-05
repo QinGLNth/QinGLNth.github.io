@@ -64,12 +64,12 @@
 }
 @keyframes huxi_dark {
   0% {
-    box-shadow: 0px 0px 1px 1px #E9727B;
+    box-shadow: 0px 0px 1px 1px #727BE9;
   }
   50% {
-    box-shadow: 0px 0px 5px 5px #E9727B;
+    box-shadow: 0px 0px 5px 5px #727BE9;
   }
   100% {
-    box-shadow: 0px 0px 1px 1px #E9727B;
+    box-shadow: 0px 0px 1px 1px #727BE9;
   }
 }
