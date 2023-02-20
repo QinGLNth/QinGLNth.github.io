@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2023/02/20/cleczlnut000k5kvn5df9778a/"/>
+      <url>/2023/02/20/cleczlnut000k5kvn5df9778a/</url>
+      
+        <content type="html"><![CDATA[<h1 id="修改Unity缓存位置"><a href="#修改Unity缓存位置" class="headerlink" title="修改Unity缓存位置"></a>修改Unity缓存位置</h1><p>1.打开Unity的编辑器，找到Editor&#x2F;Preferences&#x2F;GICache，修改缓存位置</p><p>在把C盘的C:\Users\XXX\AppData\Local\Unity【XXX是Windows的用户名】找到GICache目录，删除就行。<br>重启Unity</p><p>2.在C盘Unity在C:\Users\Username\AppData\Local\Unity\cache 中缓存了npm和packages随着项目增加，缓存越大，修改缓存目录方法如下：<br>(1.打开此电脑的属性<br>(2.打开高级系统设置</p><p>UPM_CACHE_PATH<br> D:\Unity\UnityCache\packages（目录路径随缓存目录位置而变）<br>UPM_NPM_CACHE_PATH<br> D:\Unity\UnityCache\npm          （同上）</p><p>3.重启电脑。<br>4.打开UnityHub和Unity项目。查看新的缓存目录是否缓存了东西，有的话-》删除C盘的Cache缓存</p><p>PS：转载自<a href="https://blog.csdn.net/baidu_39447417?type=blog">GA博客</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于个人网盘的搭建</title>
       <link href="/2023/02/04/blog002/"/>
       <url>/2023/02/04/blog002/</url>
