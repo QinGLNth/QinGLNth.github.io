@@ -4,22 +4,9 @@
   
     
     <entry>
-      <title></title>
-      <link href="/2023/02/20/clfb6payq0007y4vn2ln5a00x/"/>
-      <url>/2023/02/20/clfb6payq0007y4vn2ln5a00x/</url>
-      
-        <content type="html"><![CDATA[<h1 id="修改Unity缓存位置"><a href="#修改Unity缓存位置" class="headerlink" title="修改Unity缓存位置"></a>修改Unity缓存位置</h1><p>1.打开Unity的编辑器，找到Editor&#x2F;Preferences&#x2F;GICache，修改缓存位置</p><p>在把C盘的C:\Users\XXX\AppData\Local\Unity【XXX是Windows的用户名】找到GICache目录，删除就行。<br>重启Unity</p><p>2.在C盘Unity在C:\Users\Username\AppData\Local\Unity\cache 中缓存了npm和packages随着项目增加，缓存越大，修改缓存目录方法如下：<br>(1.打开此电脑的属性<br>(2.打开高级系统设置</p><p>UPM_CACHE_PATH<br> D:\Unity\UnityCache\packages（目录路径随缓存目录位置而变）<br>UPM_NPM_CACHE_PATH<br> D:\Unity\UnityCache\npm          （同上）</p><p>3.重启电脑。<br>4.打开UnityHub和Unity项目。查看新的缓存目录是否缓存了东西，有的话-》删除C盘的Cache缓存</p><p>PS：转载自<a href="https://blog.csdn.net/baidu_39447417?type=blog">GA博客</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于VS Code配置C语言环境</title>
-      <link href="/2023/02/04/blog004/"/>
-      <url>/2023/02/04/blog004/</url>
+      <link href="/2023/03/16/blog004/"/>
+      <url>/2023/03/16/blog004/</url>
       
         <content type="html"><![CDATA[<h1 id="关于VS-Code配置C语言环境"><a href="#关于VS-Code配置C语言环境" class="headerlink" title="关于VS Code配置C语言环境"></a>关于VS Code配置C语言环境</h1><blockquote><p><strong>前言:</strong></p><p>1.由于学校默认使用的C语言编译软件VC++6.0已经过时太久，无法与现时期的大多数系统相兼容，故在此写下使用VS Code配置C语言环境的教程，希望能帮助大家更好的进行学习。</p><p>2.想看软件具体界面和操作的可以跳到最后面看一看。</p><p>3.在开始之前你需要准备好这些东西（下述文件班群里已有，同学们自行下载即可）：</p><p>​<a href="https://code.visualstudio.com/">VS Code</a> ；<a href="https://jmeubank.github.io/tdm-gcc/download/">TDM64-GCC(64位+32位版本)</a></p><p>​其他前来观看的朋友也可以点击上述文字来进入下载链接</p></blockquote><h2 id="一、相关资源安装"><a href="#一、相关资源安装" class="headerlink" title="一、相关资源安装"></a>一、相关资源安装</h2><p>这里大家要注意，软件默认的安装目录基本都在C盘，而C盘在长时间积累文件后爆满的话便会因为存储空间不足导致系统运行出现各种问题，所以我推荐大家在其他盘新建一个英文名称的文件夹用于存放软件（如Software）。</p><p>1.首先进行VS Code的安装</p><p><img src="https://s3.bmp.ovh/imgs/2023/03/16/cd01df770d6a987b.png"></p><p><img src="https://s3.bmp.ovh/imgs/2023/03/16/96cc68f8be23b338.png"></p><p><img src="https://s3.bmp.ovh/imgs/2023/03/16/f7fbd2c6d2592b5d.png"></p><p>2.然后是TDM-GCC的安装，按照上面我所讲的，可以在D:\Software里面新建一文件夹，进行安装。</p><p><img src="https://s3.bmp.ovh/imgs/2023/03/16/af9e54819c4c8b9c.png"></p><p><img src="https://s3.bmp.ovh/imgs/2023/03/16/7e6f1320601e08f5.png"></p><p><img src="https://s3.bmp.ovh/imgs/2023/03/16/3252a5d07fe11014.png"></p><p><img src="https://s3.bmp.ovh/imgs/2023/03/16/6122caf25a558a98.png"></p><blockquote><p>完成上述安装步骤后，请重启电脑！！！</p></blockquote><h2 id="二、VS-Code相关插件的安装"><a href="#二、VS-Code相关插件的安装" class="headerlink" title="二、VS Code相关插件的安装"></a>二、VS Code相关插件的安装</h2><p>为了使VS Code能编译C语言书写的代码，需要安装下述插件</p><p><img src="https://s3.bmp.ovh/imgs/2023/03/16/20edc18d2bf3aa2e.png"></p><p>关于这个插件，我们需要一些设置来使得我们运行C程序时，能够正常弹出控制台。</p><p><img src="https://s3.bmp.ovh/imgs/2023/03/16/1d27e592512f0aba.png"></p><p><img src="https://s3.bmp.ovh/imgs/2023/03/16/9a11fde379244cd5.png"></p><p>这个是简体中文插件，大家可以根据需求安装。</p><p><img src="https://s3.bmp.ovh/imgs/2023/03/16/5ca4a27fb6133a8f.png"></p><p>最后我个人推荐一款主题插件，它的代码高亮十分舒适，可以增强大家的阅读体验。</p><p><img src="https://s3.bmp.ovh/imgs/2023/03/16/995fecafca5b0999.png"></p><p>然后就是管理员权限的设置</p><p><img src="https://s3.bmp.ovh/imgs/2023/03/16/1ba6a158717765d8.png"></p><h2 id="三、创建C程序文件并运行"><a href="#三、创建C程序文件并运行" class="headerlink" title="三、创建C程序文件并运行"></a>三、创建C程序文件并运行</h2><blockquote><p>完成以上步骤，重启VS Code，你应该就能开始编写C程序了，下面附上最简单的一段代码，用于大家的验证。</p></blockquote><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//包含一个叫stdio.h的文件</span></span><br><span class="line"><span class="comment">//st-standard i-input o-output 标准输入输出</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span> </span></span><br><span class="line"></span><br><span class="line"><span class="comment">//int-指一个整型</span></span><br><span class="line"><span class="comment">//int在main之前代表main函数调用后返回一个整型值</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span><span class="comment">//主函数-程序的入口-main函数有且仅有一个</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="comment">//printf函数-库函数-C语言本身提供给我们进行使用的函数 需使用#include进行调用</span></span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;hello world\n&quot;</span>);<span class="comment">//要完成的任务-print(打印)  f(函数)</span></span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;<span class="comment">// 返回整数 0</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>VS Code创建文件有很多方法，我推荐大家在一个地方新建一个英文名的文件夹（使用中文会出现很多奇奇怪怪的问题），然后按需求再新建其他文件夹进行文件的细分。</p><p><img src="https://s3.bmp.ovh/imgs/2023/03/16/79d3c32d54b0d045.png"></p><p><img src="https://s3.bmp.ovh/imgs/2023/03/16/ba7762d8aa22b90f.png"></p><p>按下键盘上的F6即可运行，若弹出控制台显示 hello world 即为成功。</p><p><img src="https://s3.bmp.ovh/imgs/2023/03/16/1144725cb3ca939c.png"></p>]]></content>
       
@@ -29,6 +16,19 @@
           <category> 学习 </category>
           
       </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/02/20/clfb6r33c0009bgvn4ng3hxvb/"/>
+      <url>/2023/02/20/clfb6r33c0009bgvn4ng3hxvb/</url>
+      
+        <content type="html"><![CDATA[<h1 id="修改Unity缓存位置"><a href="#修改Unity缓存位置" class="headerlink" title="修改Unity缓存位置"></a>修改Unity缓存位置</h1><p>1.打开Unity的编辑器，找到Editor&#x2F;Preferences&#x2F;GICache，修改缓存位置</p><p>在把C盘的C:\Users\XXX\AppData\Local\Unity【XXX是Windows的用户名】找到GICache目录，删除就行。<br>重启Unity</p><p>2.在C盘Unity在C:\Users\Username\AppData\Local\Unity\cache 中缓存了npm和packages随着项目增加，缓存越大，修改缓存目录方法如下：<br>(1.打开此电脑的属性<br>(2.打开高级系统设置</p><p>UPM_CACHE_PATH<br> D:\Unity\UnityCache\packages（目录路径随缓存目录位置而变）<br>UPM_NPM_CACHE_PATH<br> D:\Unity\UnityCache\npm          （同上）</p><p>3.重启电脑。<br>4.打开UnityHub和Unity项目。查看新的缓存目录是否缓存了东西，有的话-》删除C盘的Cache缓存</p><p>PS：转载自<a href="https://blog.csdn.net/baidu_39447417?type=blog">GA博客</a></p>]]></content>
+      
       
       
     </entry>
